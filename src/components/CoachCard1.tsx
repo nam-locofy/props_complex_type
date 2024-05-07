@@ -12,8 +12,8 @@ export enum Numbers {
 
 export type CoachCard1Type = {
   image?: string;
-  coachName?: string;
-  star?: Numbers;
+  coachName?: 'Jane' | 'Danny' | 'Robert';
+  star: Numbers;
   speciality?: string;
 };
 
