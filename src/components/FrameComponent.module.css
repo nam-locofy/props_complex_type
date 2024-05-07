@@ -1,0 +1,229 @@
+.weTrainedYou {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  line-height: 50px;
+  font-weight: 700;
+  font-family: inherit;
+}
+.weTrainedYouToGainWrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 var(--padding-2xl) 0 var(--padding-xl);
+}
+.imageIcon {
+  align-self: stretch;
+  height: 429px;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.headingIcon {
+  height: 269.5px;
+  width: 1097.5px;
+  position: absolute;
+  margin: 0 !important;
+  bottom: -146px;
+  left: -430.8px;
+}
+.joshuaFrankilin {
+  position: relative;
+  line-height: 28px;
+  font-weight: 600;
+}
+.starIcon {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  border-radius: var(--br-12xs);
+}
+.starWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-12xs) 0 0;
+}
+.div {
+  position: relative;
+  line-height: 20px;
+  display: inline-block;
+  min-width: 18px;
+  margin-left: -2px;
+}
+.frameDiv,
+.frameWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frameWrapper {
+  flex-direction: column;
+  padding: var(--padding-9xs-5) 0 0;
+  font-size: var(--font-size-lg);
+}
+.joshuaFrankilinParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.line {
+  align-self: stretch;
+  height: 1px;
+  position: relative;
+  border-top: 1px solid var(--color-darkslategray);
+  box-sizing: border-box;
+}
+.crossfitExpoortNutrition,
+.specialisations {
+  position: relative;
+  line-height: 145%;
+  text-transform: capitalize;
+  flex-shrink: 0;
+  debug_commit: 1de1738;
+}
+.crossfitExpoortNutrition {
+  align-self: stretch;
+  line-height: 31.8px;
+  font-weight: 500;
+  color: var(--color-gray-100);
+}
+.frameContainer,
+.specialisationsParent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.specialisationsParent {
+  width: 328.3px;
+  gap: var(--gap-8xs-7);
+  font-size: var(--font-size-xl);
+  font-family: var(--font-lato);
+}
+.frameContainer {
+  align-self: stretch;
+  gap: var(--gap-2xl-5);
+}
+.fbIcon,
+.instaIcon {
+  height: 21.3px;
+  width: 22.1px;
+  position: relative;
+  min-height: 21px;
+  flex-shrink: 0;
+  debug_commit: 1de1738;
+}
+.fbIcon {
+  height: 21.1px;
+}
+.instaParent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-lg);
+}
+.details,
+.headingParent {
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.details {
+  flex: 1;
+  background-color: var(--color-gray-300);
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--padding-30xl) var(--padding-25xl-5);
+  box-sizing: border-box;
+  gap: var(--gap-15xl-9);
+  z-index: 1;
+}
+.headingParent {
+  align-self: stretch;
+  flex-direction: row;
+  position: relative;
+}
+.frameGroup,
+.headingParent,
+.imageParent {
+  justify-content: flex-start;
+}
+.imageParent {
+  width: 448px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.frameGroup {
+  width: 1400px;
+  overflow-x: auto;
+  flex-direction: row;
+  gap: var(--gap-9xl);
+  margin-bottom: -146px;
+  padding-bottom: var(--padding-127xl);
+  text-align: left;
+  font-size: var(--font-size-6xl);
+  color: var(--color-white);
+}
+.aboutInner,
+.frameGroup,
+.frameParent {
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.frameParent {
+  width: 1400px;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-28xl);
+}
+.aboutInner {
+  width: 1704px;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  font-size: var(--font-size-26xl);
+  color: var(--color-gray-300);
+  font-family: var(--font-inter);
+}
+@media screen and (max-width: 825px) {
+  .weTrainedYou {
+    font-size: var(--font-size-17xl);
+    line-height: 40px;
+  }
+  .frameParent {
+    gap: var(--gap-4xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .weTrainedYou {
+    font-size: var(--font-size-8xl);
+    line-height: 30px;
+  }
+  .joshuaFrankilin {
+    font-size: var(--font-size-xl);
+    line-height: 22px;
+  }
+  .joshuaFrankilinParent {
+    flex-wrap: wrap;
+  }
+  .crossfitExpoortNutrition,
+  .specialisations {
+    font-size: var(--font-size-base);
+    line-height: 23px;
+  }
+}
