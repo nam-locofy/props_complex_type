@@ -14,19 +14,16 @@ const FrameComponent: FunctionComponent = () => {
           <CoachCard1
             image="/image@2x.png"
             coachName="Jane"
-            star={Numbers.Five}
             speciality={`Crossfit Expoort, Nutrition & Rehab`}
           />
           <CoachCard1
             image="/image-1@2x.png"
             coachName="Danny"
-            star={Numbers.Three}
             speciality="Reading book"
           />
           <CoachCard1
             image="/image-2@2x.png"
             coachName="Robert"
-            star={Numbers.Four}
             speciality="Anime"
           />
         </div>

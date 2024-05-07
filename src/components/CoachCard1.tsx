@@ -13,14 +13,14 @@ export enum Numbers {
 export type CoachCard1Type = {
   image?: string;
   coachName?: 'Jane' | 'Danny' | 'Robert';
-  star: Numbers;
+  // star: Numbers;
   speciality?: string;
 };
 
 const CoachCard1: FunctionComponent<CoachCard1Type> = ({
   image,
   coachName,
-  star,
+  // star,
   speciality,
 }) => {
   return (
@@ -40,7 +40,7 @@ const CoachCard1: FunctionComponent<CoachCard1Type> = ({
                     src="/star.svg"
                   />
                 </div>
-                <div className={styles.div}>{star}</div>
+                <div className={styles.div}>{5}</div>
               </div>
             </div>
           </div>
