@@ -13,15 +13,21 @@ export enum Numbers {
 export type CoachCard1Type = {
   image?: string;
   coachName?: 'Jane' | 'Danny' | 'Robert';
-  // star: Numbers;
-  speciality?: string;
+  star: Numbers;
+  speciality: string;
+  age: number;
+  renderRed?: boolean,
+  habit?: string,
 };
 
 const CoachCard1: FunctionComponent<CoachCard1Type> = ({
   image,
   coachName,
-  // star,
+  star,
   speciality,
+  age,
+  renderRed,
+  habit
 }) => {
   return (
     <div className={styles.imageParent}>
@@ -40,17 +46,24 @@ const CoachCard1: FunctionComponent<CoachCard1Type> = ({
                     src="/star.svg"
                   />
                 </div>
-                <div className={styles.div}>{5}</div>
+                <div className={styles.div}>{star}</div>
               </div>
             </div>
+            <div>Age: {age}</div>
           </div>
           <div className={styles.line} />
           <div className={styles.specialisationsParent}>
             <b className={styles.specialisations}>Specialisations :</b>
             <div className={styles.crossfitExpoortNutrition}>{speciality}</div>
           </div>
+          {habit && <div className={styles.specialisationsParent}>
+            <b className={styles.specialisations}>Habit :</b>
+            <div className={styles.crossfitExpoortNutrition}>{habit}</div>
+          </div>}
         </div>
-        <div className={styles.instaParent}>
+        <div className={styles.instaParent} style={renderRed ? {
+          backgroundColor: 'red',
+        } : {}}>
           <img
             className={styles.instaIcon}
             loading="lazy"

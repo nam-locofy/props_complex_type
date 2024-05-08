@@ -15,8 +15,12 @@ const FrameComponent: FunctionComponent = () => {
             image="/image@2x.png"
             coachName="Jane"
             speciality={`Crossfit Expoort, Nutrition & Rehab`}
+            renderRed
+            star={Numbers.Four}
+            age={21}
+            habit="reading books"
           />
-          <CoachCard1
+          {/* <CoachCard1
             image="/image-1@2x.png"
             coachName="Danny"
             speciality="Reading book"
@@ -25,7 +29,7 @@ const FrameComponent: FunctionComponent = () => {
             image="/image-2@2x.png"
             coachName="Robert"
             speciality="Anime"
-          />
+          /> */}
         </div>
       </div>
     </section>
