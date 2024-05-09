@@ -28,7 +28,9 @@ export type CoachCard1Type = {
   renderRed?: boolean,
   habit?: string,
   itemList?: number[],
-  object: Record<string, string>
+  object: {
+    [index: string]: string
+  }
 };
 
 const CoachCard1: FunctionComponent<CoachCard1Type> = ({
