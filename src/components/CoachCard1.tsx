@@ -67,7 +67,7 @@ const CoachCard1: FunctionComponent<CoachCard1Type> = ({
           {itemList?.map(item => (<div style={{
             color: getRandomColor()
           }}>{item}</div>))}
-          {Object.entries(object).map((([x,y]) => <div>{x}:{y}</div>))}
+          {Object.entries(object || {}).map((([x,y]) => <div>{x}:{y}</div>))}
           <div className={styles.line} />
           <div className={styles.specialisationsParent}>
             <b className={styles.specialisations}>Specialisations :</b>
