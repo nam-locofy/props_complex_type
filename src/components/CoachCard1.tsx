@@ -28,6 +28,7 @@ export type CoachCard1Type = {
   renderRed?: boolean,
   habit?: string,
   itemList?: number[],
+  object: Record<string, string>
 };
 
 const CoachCard1: FunctionComponent<CoachCard1Type> = ({
@@ -38,7 +39,8 @@ const CoachCard1: FunctionComponent<CoachCard1Type> = ({
   age,
   renderRed,
   habit,
-  itemList
+  itemList,
+  object
 }) => {
   return (
     <div className={styles.imageParent}>
@@ -65,6 +67,7 @@ const CoachCard1: FunctionComponent<CoachCard1Type> = ({
           {itemList?.map(item => (<div style={{
             color: getRandomColor()
           }}>{item}</div>))}
+          {Object.entries(object).map((([x,y]) => <div>{x}:{y}</div>))}
           <div className={styles.line} />
           <div className={styles.specialisationsParent}>
             <b className={styles.specialisations}>Specialisations :</b>

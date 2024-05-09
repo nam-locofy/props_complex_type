@@ -20,6 +20,7 @@ const FrameComponent: FunctionComponent = () => {
             age={21}
             habit="reading books"
             itemList={[1,2,3,4]}
+            object={{"dsds": '2', 'dsad': 'dsad', 'Hello': "world"}}
           />
           {/* <CoachCard1
             image="/image-1@2x.png"
