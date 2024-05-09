@@ -19,6 +19,7 @@ const FrameComponent: FunctionComponent = () => {
             star={Numbers.Four}
             age={21}
             habit="reading books"
+            itemList={[1,2,3,4]}
           />
           {/* <CoachCard1
             image="/image-1@2x.png"

@@ -1,6 +1,15 @@
 import { FunctionComponent } from "react";
 import styles from "./CoachCard1.module.css";
 
+function getRandomColor() {
+  var letters = '0123456789ABCDEF';
+  var color = '#';
+  for (var i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
+
 export enum Numbers {
   Zero,
   One,
@@ -18,6 +27,7 @@ export type CoachCard1Type = {
   age: number;
   renderRed?: boolean,
   habit?: string,
+  itemList?: number[],
 };
 
 const CoachCard1: FunctionComponent<CoachCard1Type> = ({
@@ -27,7 +37,8 @@ const CoachCard1: FunctionComponent<CoachCard1Type> = ({
   speciality,
   age,
   renderRed,
-  habit
+  habit,
+  itemList
 }) => {
   return (
     <div className={styles.imageParent}>
@@ -51,6 +62,9 @@ const CoachCard1: FunctionComponent<CoachCard1Type> = ({
             </div>
             <div>Age: {age}</div>
           </div>
+          {itemList?.map(item => (<div style={{
+            color: getRandomColor()
+          }}>{item}</div>))}
           <div className={styles.line} />
           <div className={styles.specialisationsParent}>
             <b className={styles.specialisations}>Specialisations :</b>
