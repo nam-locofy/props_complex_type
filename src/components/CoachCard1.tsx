@@ -31,6 +31,8 @@ export type CoachCard1Type = {
   object: {
     [index: string]: string
   }
+  className?: any,
+  onClick?: any,
 };
 
 const CoachCard1: FunctionComponent<CoachCard1Type> = ({
@@ -42,7 +44,9 @@ const CoachCard1: FunctionComponent<CoachCard1Type> = ({
   renderRed,
   habit,
   itemList,
-  object
+  object,
+  className,
+  onClick
 }) => {
   return (
     <div className={styles.imageParent}>
@@ -73,7 +77,8 @@ const CoachCard1: FunctionComponent<CoachCard1Type> = ({
           <div className={styles.line} />
           <div className={styles.specialisationsParent}>
             <b className={styles.specialisations}>Specialisations :</b>
-            <div className={styles.crossfitExpoortNutrition}>{speciality}</div>
+            <div onClick={onClick} className={styles.crossfitExpoortNutrition}>{speciality}</div>
+            <div className={className}>Test ClassName</div>
           </div>
           {habit && <div className={styles.specialisationsParent}>
             <b className={styles.specialisations}>Habit :</b>

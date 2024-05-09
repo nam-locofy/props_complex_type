@@ -21,6 +21,8 @@ const FrameComponent: FunctionComponent = () => {
             habit="reading books"
             itemList={[1,2,3,4]}
             object={{"dsds": '2', 'dsad': 'dsad', 'Hello': "world"}}
+            onClick={() => console.log("Hellp")}
+            className={"anama"}
           />
           {/* <CoachCard1
             image="/image-1@2x.png"
