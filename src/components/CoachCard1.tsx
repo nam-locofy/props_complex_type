@@ -21,16 +21,16 @@ export enum Numbers {
 
 export type CoachCard1Type = {
   renderRed?: boolean,
-  age: number;
   speciality: string;
   habit?: string,
+  age: number;
   star: Numbers;
   coachName?: 'Jane' | 'Danny' | 'Robert';
   image?: string;
   itemList?: number[],
-  object: {
-    [index: string]: string
-  }
+  // object: {
+  //   [index: string]: string
+  // }
 };
 
 const CoachCard1: FunctionComponent<CoachCard1Type> = ({
@@ -42,7 +42,7 @@ const CoachCard1: FunctionComponent<CoachCard1Type> = ({
   renderRed,
   habit,
   itemList,
-  object,
+  // object,
 }) => {
   return (
     <div className={styles.imageParent}>
@@ -69,7 +69,7 @@ const CoachCard1: FunctionComponent<CoachCard1Type> = ({
           {itemList?.map(item => (<div style={{
             color: getRandomColor()
           }}>{item}</div>))}
-          {Object.entries(object || {}).map((([x,y]) => <div>{x}:{y}</div>))}
+          {/* {Object.entries(object || {}).map((([x,y]) => <div>{x}:{y}</div>))} */}
           <div className={styles.line} />
           <div className={styles.specialisationsParent}>
             <b className={styles.specialisations}>Specialisations :</b>
