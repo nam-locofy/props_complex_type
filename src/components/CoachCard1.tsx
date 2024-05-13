@@ -28,9 +28,6 @@ export type CoachCard1Type = {
   coachName?: 'Jane' | 'Danny' | 'Robert';
   image?: string;
   itemList?: number[],
-  object: {
-    [index: string]: string
-  }
   className?: string,
   onClick?: () => void;
 };
@@ -44,7 +41,6 @@ const CoachCard1: FunctionComponent<CoachCard1Type> = ({
   renderRed,
   habit,
   itemList,
-  object,
   className,
   onClick
 }) => {
@@ -75,7 +71,7 @@ const CoachCard1: FunctionComponent<CoachCard1Type> = ({
           }}>{item}</div>))}
           <div className={className}>Test style</div>
           <div onClick={onClick}>Test click</div>
-          {Object.entries(object || {}).map((([x,y]) => <div>{x}:{y}</div>))}
+          {/* {Object.entries(object || {}).map((([x,y]) => <div>{x}:{y}</div>))} */}
           <div className={styles.line} />
           <div className={styles.specialisationsParent}>
             <b className={styles.specialisations}>Specialisations :</b>
